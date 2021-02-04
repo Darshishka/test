@@ -444,7 +444,7 @@ p.block {
 	text-align: center;
 	top: 0px;
 	min-width: 960px;
-
+	font-size: large;
 }
 .container {
 	margin-top: 31px;
@@ -466,7 +466,7 @@ p.block {
 	}
 	.content {
 	  background-color: red;
-	  width: 54%;
+	  width: 93%;
 	  float: left;
 	  justify-content: space-between;
 	}

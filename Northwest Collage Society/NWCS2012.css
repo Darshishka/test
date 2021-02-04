@@ -1,0 +1,484 @@
+@charset "UTF-8";
+body {
+	font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
+	background: #333;
+	margin: 0;
+	padding: 0;
+	color: #000;
+}
+
+/* ~~ Element/tag selectors ~~ */
+ul, ol, dl { /* Due to variations between browsers, it's best practices to zero padding and margin on lists. For consistency, you can either specify the amounts you want here, or on the list items (LI, DT, DD) they contain. Remember that what you do here will cascade to the .nav list unless you write a more specific selector. */
+	padding: 0;
+	margin: 0;
+}
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;	 /* removing the top margin gets around an issue where margins can escape from their containing div. The remaining bottom margin will hold it away from any elements that follow. */
+	padding-right: 15px;
+	padding-left: 0px; /* adding the padding to the sides of the elements within the divs, instead of the divs themselves, gets rid of any box model math. A nested div with side padding can also be used as an alternate method. */
+	font-weight: normal;
+}
+a img { /* this selector removes the default blue border displayed in some browsers around an image when it is surrounded by a link */
+	border: none;
+}
+
+/* ~~ Styling for your site's links must remain in this order - including the group of selectors that create the hover effect. ~~ */
+a:link {
+	color: #333;
+	text-decoration: none; /* unless you style your links to look extremely unique, it's best to provide underlines for quick visual identification */
+}
+a:visited {
+	color: #333;
+	text-decoration: none;
+}
+a:hover {
+	color: #666;
+	text-decoration: underline;
+}
+a:active {
+	color: #666;
+	text-decoration: none;
+}
+	
+a:hover, a:active, a:focus { /* this group of selectors will give a keyboard navigator the same hover experience as the person using a mouse. */
+	text-decoration: underline;
+	background-color:inherit;
+}
+
+/* ~~this fixed width container surrounds the other divs~~ */
+.container {
+	width: 960px;
+	background: #FFFFFF;
+	margin: 0 auto;
+}
+h1,.h1 {
+	color:#202020;
+	display:block;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size:34px;
+	font-weight:bold;
+	line-height:100%;
+	margin-top:0;
+	margin-right:0;
+	margin-bottom:10px;
+	margin-left:0;
+	text-align:left;
+}
+h2,.h2 {
+	color:#202020;
+	display:block;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size:22px;
+	font-weight:bold;
+	line-height:100%;
+	margin-top:0;
+	margin-right:0;
+	margin-bottom:5px;
+	margin-left:0;
+	text-align:left;
+}
+h3,.h3 {
+	color:#369;
+	display:block;
+	border-bottom: dotted 2px #000000;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size:20px;
+	font-weight:bold;
+	line-height:120%;
+	margin-top:0;
+	margin-right:0;
+	margin-bottom:10px;
+	margin-left:0;
+	text-align:center;
+}
+h4,.h4 {
+	color:#FFF;
+	display:block;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size:18px;
+	font-weight:bold;
+	line-height:100%;
+	margin-top:0;
+	margin-right:0;
+	margin-bottom:10px;
+	margin-left:0;
+	text-align:left;
+	padding-top: 5px;
+}
+h5,.h5 {
+	color:#000;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size:15px;
+	font-weight:bold;
+	line-height:100%;
+	text-align:left;
+}
+.sidebarBold {
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	padding: 10 0px;
+	line-height: 110%;
+	color:#000;	
+}
+.sidebarBold2 {
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 15px;
+	padding: 10 0px;
+	line-height: 110%;
+	color: #000;
+}
+.sidebarBold3 {
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	padding: 10 0px;
+	line-height: 110%;
+	color:#336699;
+}
+.sidebarText {
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	padding: 0px;
+	line-height: 120%;
+	color: #000;
+}
+.sidebarText2 {
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	padding: 0px;
+	line-height: 115%;
+	color: #000;
+	font-weight: normal;
+}
+p, .p {
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	/* font-size: 14px; */
+	padding: 0px;
+	line-height: 120%;
+	color: #000000;	/*font-weight: bold;*/
+}
+.form {
+	font:Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #000;
+	text-align: left;
+	padding: 5px;
+	background-color:#FFF;
+}
+.style31 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	line-height: 130%;
+	margin: 0px;
+	font-weight: bold;
+	color: #333333;
+	padding: 2px;
+	margin-left: 20px;
+	margin-right: 20px;	
+}
+.style31 a, .style31 a:visited{
+	color: #333333;
+}
+.style31 a:hover, .style31 a:active, .style31 a:focus {
+	color: #FFF;
+}
+.prospectus {
+	font-family: Trebuchet MS, Arial, Helvetica, sans-serif;
+	font-size: 1.1em;
+	line-height: 150%;
+	font-weight: bold;
+	color: #c00;
+	
+}
+
+/* ~~ the header is not given a width. It will extend the full width of your layout. It contains an image placeholder that should be replaced with your own linked logo ~~ */
+#header {
+	padding:0 0 0 43px; background:url("site_images/nwcsBnr1d.png") repeat-x 0 0; height:300px; position:relative;
+}
+#header .logo {
+	width:253px; position:absolute; top:0; left:43px;
+	}
+#header ul.link li a.nobor{
+	font:normal 12px Arial, Helvetica, sans-serif; color:#FFF; display:block; padding:13px 16px 9px; text-decoration:none; align:top; float:right; border-right:0px solid #7A0303; background-color:inherit;
+	}
+#header ul.link li a.nobor:hover, a:hover{
+	color:#FFF;
+	text-decoration:underline;
+	background-color:none;
+	} 
+#header ul.nav {
+	text-align:right; margin:0 43px 0 0; background:none; padding:0 0px 0 6px; float:right;
+	}
+#header ul.nav li {
+	}
+#header ul.nav li a{
+	background-image:none; background-repeat:no-repeat; background-position: top right; padding:14px 10px; display: block; float:left; 
+	}
+#header ul.nav li a.nobor{
+	padding:14px 10px; display: block; float:left; background-image:none; background-repeat:no-repeat; background-position: top right;
+	}
+#header ul.nav li a img {
+	border:0;
+	}
+#header ul.nav li a:hover a.nobor:hover{
+	background-image:none; background-repeat:no-repeat; background-position: top right;
+	}
+#header form {
+	margin:20px 0 0 0; padding:4px 0 7px 38px; background:url(images/newletter-icon.gif) no-repeat 0 4px; link: url(index.htm);
+	}
+#header form label {
+	font:bold 13px Arial, Helvetica, sans-serif; color:#2F0101; padding:0 8px 0 0; vertical-align:middle;
+	background-color:inherit;
+	}
+#header form .textbox {
+	width:205px; height:20px; font:normal 10px Arial, Helvetica, sans-serif; color:#000000; /*padding:0 7px 0 0;*/ margin:0; vertical-align:middle; background-color:inherit;
+	}
+#header form .mar {
+	vertical-align:middle;
+	}
+#header form .mar2 {
+	vertical-align: middle;
+	}
+#header form a.subscribe {
+	background:url(images/btn-subscribe.gif) no-repeat 0 0; margin-left:180px; padding:0 63px 0 0; text-decoration:none; vertical-align:middle; cursor:pointer;
+	}
+#header form a.subscribe:hover {
+	background:url(images/btn-subscribe.gif) no-repeat 0 0;
+	}
+#header form a.login {
+	background:url(images/btn-login.gif) no-repeat 0 0; margin-left:126px; padding:0 63px 0 0; text-decoration:none; vertical-align:middle; cursor:pointer;
+	}
+#header form a.login:hover {
+	background:url(images/btn-login.gif) no-repeat 0 0;
+	}
+	
+.program {
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	line-height: 130%;
+	text-align: left;
+	font-size: 14px;
+	color: #454545;
+	}
+.program li {
+	text-align:left;
+	}
+.program p {
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	padding: 0px;
+	line-height: 120%;
+	color: #454545;
+}
+
+
+
+/* ~~ These are the columns for the layout. ~~ 
+
+1) Padding is only placed on the top and/or bottom of the divs. The elements within these divs have padding on their sides. This saves you from any "box model math". Keep in mind, if you add any side padding or border to the div itself, it will be added to the width you define to create the *total* width. You may also choose to remove the padding on the element in the div and place a second div within it with no width and the padding necessary for your design.
+
+2) No margin has been given to the columns since they are all floated. If you must add margin, avoid placing it on the side you're floating toward (for example: a right margin on a div set to float right). Many times, padding can be used instead. For divs where this rule must be broken, you should add a "display:inline" declaration to the div's rule to tame a bug where some versions of Internet Explorer double the margin.
+
+3) Since classes can be used multiple times in a document (and an element can also have multiple classes applied), the columns have been assigned class names instead of IDs. For example, two sidebar divs could be stacked if necessary. These can very easily be changed to IDs if that's your preference, as long as you'll only be using them once per document.
+
+*/
+
+.sidebar1 {
+	float: right;
+	width: 370px;
+	background: #FFF;
+	padding-bottom: 10px;
+	padding-top: 20px;
+}
+#sidebarBox {
+	width: 320px;
+	background:#FC6;
+	padding: 10px;
+	text-align: center;
+	font-weight: normal;
+}
+#sidebarBox2 {
+	width: 320px;
+	background:#996;
+	padding: 10px;
+	text-align: left;
+	font-weight: normal;
+	margin-top:20px;
+	margin-bottom:20px;
+}
+#sidebarBox3 {
+	width: 320px;
+	background:#fff;
+	padding: 10px;
+	text-align:center;
+	font-weight:normal;
+	margin-bottom:20px;
+}
+.content {
+	padding: 10px 30px 20px 40px;
+	width: 520px;
+	float: right;
+	background: #fff;
+}
+#contentLinks {
+	Display: inline-block;
+	padding: 10px 20px;
+	width: 880px;
+	background: #fff;
+	text-align: center;
+	margin: 0 auto;	
+}
+.contentArt {
+	padding: 10px 20px 10px 40px;
+	width: 840px;
+	background: #fff;
+	text-align: left;
+}
+#contentText p {
+	padding-left: 20px;
+	text-align: left;
+}
+.contentText a {
+	color: #369;
+}
+.col1 {
+	float: left;
+	width: 270px;
+	background: #FC6;
+	padding: 10 20px;
+	margin-left: 50px;
+	
+}
+.col2 {
+	float: left;
+	width: 270px;
+	background: #9cf;
+	margin-left: 5px;
+	padding: 10 20px;
+}
+.col3 {
+	float: left;
+	width: 270px;
+	background: #98AB60;
+	margin-left: 5px;
+	padding: 10 20px;
+}
+
+/* ~~ This grouped selector gives the lists in the .content area space ~~ */
+.content ul, .content ol {
+	padding: 0 15px 15px 40px; /* this padding mirrors the right padding in the headings and paragraph rule above. Padding was placed on the bottom for space between other elements on the lists and on the left to create the indention. These may be adjusted as you wish. */
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #333;
+}
+
+/* ~~ The footer ~~ */
+.footer {
+	background: #000; 
+	padding: 10px; 
+	width: 940px;
+	font-size: 12px;
+	font-family:Arial, Helvetica, sans-serif;
+	color: #ccc;
+	position: relative;/* this gives IE6 hasLayout to properly clear */
+	clear: both; /* this clear property forces the .container to understand where the columns end and contain them */
+	}
+.footerMenu {
+		font-size:11px;
+		color:#ccc;
+	}
+.footerCopyright {
+		font-size:11px;
+		color:#9CF;
+		float:right;
+		text-align:right;
+		width:480px;
+}
+	
+/* ~~ miscellaneous float/clear classes ~~ */
+.fltrt {  /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* this class can be used to float an element left in your page. The floated element must precede the element it should be next to on the page. */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* this class can be placed on a <br /> or empty div as the final element following the last floated div (within the #container) if the #footer is removed or taken out of the #container */
+	clear:both;
+	height:0;
+	font-size: 1px;
+	line-height: 0px;
+}
+.container .contentArt p {
+}
+p.block {
+  display: block;
+  width: auto;
+  height: auto;
+  padding: 10px;
+  border: 2px solid black;    
+  background-color: #cccccc; 
+}
+
+/* Darcy Atlas Edits*/
+#hamburger {
+	position: relative;
+	width: fit-content;
+	height: fit-content;
+	float: left;
+	/* visibility: hidden; */
+	bottom: 1px;
+}
+#hamburger img {
+	position: fixed;
+}
+#menu {
+	position: fixed;
+	width: 100%;
+	height: 36px;
+	top: 0px;
+	min-width: 960px;
+}
+.link {
+	position: fixed;
+	width: 100%;
+	text-align: center;
+	top: 0px;
+	min-width: 960px;
+
+}
+.container {
+	margin-top: 31px;
+}
+#navLink {
+	padding: 15px;
+}
+
+@media screen and (max-width: 1000px){
+	h2 {
+		font-size: 30px;
+	}
+	.footerMenu, .footerCopyright, .sidebarText {
+		font-size: 16px;
+	}
+	#mheader {
+		/* background: red; */
+		/* height: 30px; */
+	}
+	.content {
+	  background-color: red;
+	  width: 54%;
+	  float: left;
+	  justify-content: space-between;
+	}
+	.container {
+	  margin: 0% 1% 0% 1%;
+	  width: fit-content;
+	  padding-top: 25px;
+	}
+	.sidebar1 {
+	  width: 38%;
+	}
+	#hamburger {
+		visibility: visible;
+	  }
+  }

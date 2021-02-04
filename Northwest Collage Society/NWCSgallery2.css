@@ -1,0 +1,217 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+	font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
+	background: #fff;
+	margin: 0 auto;
+	padding: 0;
+	color: #000;
+	width:100%;
+	max-width:1280px;
+}
+
+/* ~~ Element/tag selectors ~~ */
+ul, ol, dl { /* Due to variations between browsers, it's best practices to zero padding and margin on lists. For consistency, you can either specify the amounts you want here, or on the list items (LI, DT, DD) they contain. Remember that what you do here will cascade to the .nav list unless you write a more specific selector. */
+	padding: 0;
+	margin: 0;
+}
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;	 /* removing the top margin gets around an issue where margins can escape from their containing div. The remaining bottom margin will hold it away from any elements that follow. */
+	padding-right: 15px;
+	padding-left: 0px; /* adding the padding to the sides of the elements within the divs, instead of the divs themselves, gets rid of any box model math. A nested div with side padding can also be used as an alternate method. */
+	font-weight: normal;
+}
+a img { /* this selector removes the default blue border displayed in some browsers around an image when it is surrounded by a link */
+	border: none;
+}
+
+/* ~~ Styling for your site's links must remain in this order - including the group of selectors that create the hover effect. ~~ */
+a:link {
+	color: #FC6;
+	text-decoration: none; /* unless you style your links to look extremely unique, it's best to provide underlines for quick visual identification */
+	
+}
+a:visited {
+	color: #FC6;
+	text-decoration: none;
+	
+}
+a:hover {
+	color: #FFF;
+	text-decoration: underline;
+	
+}
+a:active {
+	color: #FFF;
+	text-decoration: none;
+	
+}
+	
+a:hover, a:active, a:focus { /* this group of selectors will give a keyboard navigator the same hover experience as the person using a mouse. */
+	text-decoration: underline;
+	background-color:inherit;
+}
+
+/* ~~this fixed width container surrounds the other divs~~ */
+.container {
+	width: 960px;
+	background: #FFFFFF;
+	margin: 0 auto; /* the auto value on the sides, coupled with the width, centers the layout */
+}
+
+/* ~~ the header is not given a width. It will extend the full width of your layout. It contains an image placeholder that should be replaced with your own linked logo ~~ */
+#header {
+	padding:0 0 0 43px; margin: auto; background:url("site_images/nwcsBnr1d.png") no-repeat; height:300px; position:static;
+}
+/*#header .logo {
+	width:253px; position:absolute; top:0; left:43px;
+	}*/
+#header ul.link li a.nobor{
+	font:normal 12px Arial, Helvetica, sans-serif; color:#FFF; display:block; padding:13px 16px 9px; text-decoration:none; align:top; float:right; border-right:0px solid #7A0303; background-color:inherit;
+	}
+#header ul.link li a.nobor:hover, a:hover{
+	color: #fc6;
+	text-decoration: none;
+	text-align: center;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+	display: block;
+	} 
+#header ul.nav {
+	text-align:right; margin:0 43px 0 0; background:none; padding:0 0px 0 6px; float:right;
+	}
+#header ul.nav li {
+	}
+#header ul.nav li a{
+	background-image:none; background-repeat:no-repeat; background-position: top right; padding:14px 10px; display: block; float:left; 
+	}
+#header ul.nav li a.nobor{
+	padding:14px 10px; display: block; float:left; background-image:none; background-repeat:no-repeat; background-position: top right;
+	}
+#header ul.nav li a img {
+	border:0;
+	}
+#header ul.nav li a:hover a.nobor:hover{
+	background-image:none; background-repeat:no-repeat; background-position: top right;
+	}
+
+.backtoTop  {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1.4em;
+	color: #333;
+	padding: 20px 0 10px;
+	margin: 0px auto 0;
+	text-align: center;
+	}
+/* ~~ headline ~~*/
+.sz_portfolio_003_header_show{
+  width: 70%;
+  margin: auto;
+  text-align: center;
+  padding: 50px 0 20px 0;
+}
+.sz_portfolio_003_header_show > h1{
+	margin: 0;
+	color: #1e1e25;
+	font-size: 30px;
+	font-weight: 700;
+	text-transform: uppercase;
+	text-decoration: none;
+	text-shadow: none;
+	-webkit-font-smoothing: antialiased;
+	font-family: 'Montserrat', sans-serif;
+	text-align: center;
+}
+.sz_portfolio_003_header_show > h1 > span{
+  color: #ff6a00;
+  margin-left: 5px;
+}
+.sz_portfolio_003_header_show > h2{
+  margin: 10px 0;
+  color: #1e1e25;
+  font-size: 3em;
+  font-weight: 400;
+  text-decoration: none;
+  text-shadow: none;
+  -webkit-font-smoothing: antialiased;
+  font-family: 'Montserrat', sans-serif;
+}
+.sz_portfolio_003_header_show > p{
+  margin: 10px 0;
+  color: #1e1e25;
+  font-size: 1.7em;
+  font-weight: 400;
+  text-decoration: none;
+  text-shadow: none;
+  -webkit-font-smoothing: antialiased;
+  font-family: 'Montserrat', sans-serif;
+}
+.award {
+	color:#FF6A00;
+}
+
+/* ~~ The footer ~~ */
+.footer {
+	background: #000; 
+	padding: 10px; 
+	max-width: 100%;
+	font-size: 12px;
+	font-family:Arial, Helvetica, sans-serif;
+	color: #ccc;
+	position: relative;/* this gives IE6 hasLayout to properly clear */
+	clear: both; /* this clear property forces the .container to understand where the columns end and contain them */
+	}
+.footerMenu {
+	font-size:12px;
+	color:#ccc;
+	
+	text-align: left;
+	}
+.footerMenu a:link {
+	font-size:12px;
+	color:#ccc;
+	
+	text-align: left;
+	}
+.footerMenu a:visited {
+	color: #FFF;
+	
+	text-decoration: none;
+	text-align: left;
+}
+.footerMenu a:hover {
+	color: #FC6;
+	
+	text-decoration: underline;
+	text-align: left;
+}
+.footerMenu a:active {
+	color: #FC6;
+	
+	text-decoration: underline;
+	text-align: left;
+}
+.footerCopyright {
+		font-size:12px;
+		color:#9CF;
+		float:right;
+		text-align:right;
+		width:480px;
+}
+
+.fltrt {  /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* this class can be used to float an element left in your page. The floated element must precede the element it should be next to on the page. */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* this class can be placed on a <br /> or empty div as the final element following the last floated div (within the #container) if the #footer is removed or taken out of the #container */
+	clear:both;
+	height:0;
+	font-size: 1px;
+	line-height: 0px;
+}

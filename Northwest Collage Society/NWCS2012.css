@@ -444,13 +444,13 @@ p.block {
 	text-align: center;
 	top: 0px;
 	min-width: 960px;
-
+	font-size: larger;
 }
 .container {
 	margin-top: 31px;
 }
 #navLink {
-	padding: 15px;
+	padding: 10px;
 }
 
 @media screen and (max-width: 1000px){
@@ -466,7 +466,7 @@ p.block {
 	}
 	.content {
 	  background-color: red;
-	  width: 54%;
+	  width: 93%;
 	  float: left;
 	  justify-content: space-between;
 	}

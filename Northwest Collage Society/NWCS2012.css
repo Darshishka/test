@@ -420,6 +420,9 @@ p.block {
 }
 
 /* Darcy Atlas Edits*/
+.content {
+	width: fit-content;
+}
 #hamburger {
 	position: relative;
 	width: fit-content;

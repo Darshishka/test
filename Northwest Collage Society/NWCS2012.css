@@ -153,7 +153,7 @@ p, .p {
 	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
 	/* font-size: 14px; */
 	padding: 0px;
-	line-height: 120%;
+	/* line-height: 120%; */
 	color: #000000;	/*font-weight: bold;*/
 }
 .form {
@@ -314,7 +314,7 @@ p, .p {
 }
 .content {
 	padding: 10px 30px 20px 40px;
-	width: 520px;
+	width: fit-content;
 	float: right;
 	background: #fff;
 }
@@ -449,6 +449,7 @@ p.block {
 }
 .container {
 	margin-top: 31px;
+	word-spacing: normal;
 }
 #navLink {
 	color: wheat;
@@ -486,7 +487,10 @@ p.block {
 	.sidebar1 {
 	  width: 38%;
 	}
+	.sidebarText {
+		font-size: xx-large;
+	}
 	#hamburger {
 		visibility: visible;
-	  }
+	}
   }

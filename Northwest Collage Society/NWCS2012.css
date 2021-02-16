@@ -136,14 +136,14 @@ h5,.h5 {
 }
 .sidebarText {
 	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
-	font-size: 14px;
+	/* font-size: 14px; */
 	padding: 0px;
 	line-height: 120%;
 	color: #000;
 }
 .sidebarText2 {
 	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
-	font-size: 12px;
+	/* font-size: 12px; */
 	padding: 0px;
 	line-height: 115%;
 	color: #000;
@@ -488,7 +488,7 @@ p.block {
 	  width: 38%;
 	}
 	.sidebarText {
-		font-size: xx-large;
+		font-size: x-large;
 	}
 	#hamburger {
 		visibility: visible;

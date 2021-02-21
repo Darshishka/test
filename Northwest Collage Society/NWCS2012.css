@@ -153,9 +153,10 @@ h5,.h5 {
 }
 p, .p {
 	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
-	/* font-size: 14px; */
+	font-size: 110%;
+	font-weight: normal;
 	padding: 0px;
-	/* line-height: 120%; */
+	line-height: 140%;
 	color: #000000;	/*font-weight: bold;*/
 }
 .form {
@@ -461,11 +462,15 @@ p.block {
 }
 
 @media screen and (max-width: 1000px){
-	.p {
-		word-spacing: 10px;
+	p, .p {
+		font-size: 19px;
+		line-height: 25px;
 	}
-	h2 {
-		font-size: 30px;
+	h1 {
+		font-size: 40px;
+	}
+	h3, .sidebarBold {
+		font-size: 22px;
 	}
 	.footerMenu, .footerCopyright, .sidebarText {
 		font-size: 16px;

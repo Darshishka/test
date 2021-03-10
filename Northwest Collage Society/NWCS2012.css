@@ -452,7 +452,7 @@ p.block {
 		color: white;
 		font-style: italic;
 		margin-top: 15px;
-		width: 400px;
+		/* width: 400px; */
 	}
 	#logo, #menu {
 		position: absolute;
@@ -482,7 +482,7 @@ p.block {
 	}
 }
 
-@media screen and (max-width: 750px) {
+@media only screen and (max-width: 750px) {
 	#title {
 		visibility: hidden;
 	}
@@ -500,7 +500,7 @@ p.block {
 		color: white;
 		font-style: italic;
 		margin-top: 35px;
-		width: 300px;
+		width: 290px;
 		font-size: medium;
 	}
 }

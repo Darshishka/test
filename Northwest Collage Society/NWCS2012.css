@@ -420,18 +420,50 @@ p.block {
 }
 #mobileHeader {
 	visibility: hidden;
+	height: 0px;
 }
-@media (max-width: 976px) {
+@media screen and (max-width: 976px) {
 	#mobileHeader {
 		background-color:steelblue;
-		width: 99%;
+		width: 98.5%;
 		height: 65px;
 		position: absolute;
 		visibility: visible;
 		padding: 5px;
+		word-wrap: break-word;
+		overflow: hidden;
+	}
+	#head {
+		height: 80px;
+	}
+	#titleShort {
+		visibility: hidden;
+	}
+	#title {
+		position: absolute;
+		margin-left: 85px;
+		font-size: 30px;
+		color: white;
+		text-shadow: #000 2px 2px 2px;
+	}
+	#tag {
+		position: absolute;
+		margin-left: 85px;
+		color: white;
+		font-style: italic;
+		margin-top: 15px;
+		width: 400px;
+	}
+	#logo, #menu {
+		position: absolute;
+		height: 65px;
 	}
 	#menu {
 		float: right;
+		position: relative;
+	}
+	#head {
+		height: 70px;
 	}
 	.container {
 		width: 100%;
@@ -447,6 +479,28 @@ p.block {
 	}
 	.sidebar1 {
 		float: none;
-		margin: 15px;
+	}
+}
+
+@media screen and (max-width: 750px) {
+	#title {
+		visibility: hidden;
+	}
+	#titleShort {
+		position: absolute;
+		margin-left: 85px;
+		font-size: 25px;
+		color: white;
+		text-shadow: #000 2px 2px 2px;
+		visibility: visible;
+	}
+	#tag {
+		position: absolute;
+		margin-left: 85px;
+		color: white;
+		font-style: italic;
+		margin-top: 35px;
+		width: 300px;
+		font-size: medium;
 	}
 }

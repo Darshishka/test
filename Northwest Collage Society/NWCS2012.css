@@ -492,6 +492,7 @@ p.block {
 		
 	}
 	#links {
+		display: none;
 		top: 95px;
 		position: fixed;
 		right: 5px;

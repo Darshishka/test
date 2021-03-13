@@ -482,7 +482,7 @@ p.block {
 		width: fit-content;
 	}
 	#header {
-		visibility: hidden;
+		display: none;
 		width: 0px;
 		height: 0px;
 	}
@@ -491,16 +491,16 @@ p.block {
 		padding: unset;
 		
 	}
-	#links {
+	#linksDiv {
 		display: none;
 		top: 95px;
-		position: fixed;
-		right: 5px;
+		/* position: fixed; */
+		/* float */
 		width: 125px;
 		background-color: #d3d3d3;
 		padding: 12px 5px 12px 5px;
 	}
-	#links a {
+	#linksDiv a {
 		float: left;
 		width: 100%;
 		font-weight: normal;
@@ -508,7 +508,7 @@ p.block {
 		margin: 5px;
 		padding: 5px;
 	}
-	#links a:hover {
+	#linksDiv a:hover {
 		font-weight: bold;
 		background-color: #c4c1c1;
 		text-decoration: none;

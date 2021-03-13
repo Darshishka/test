@@ -422,6 +422,9 @@ p.block {
 	visibility: hidden;
 	height: 0px;
 }
+#links {
+	display: none;
+}
 @media screen and (max-width: 976px) {
 	#mobileHeader {
 		background-color:steelblue;
@@ -455,12 +458,18 @@ p.block {
 		/* width: 400px; */
 	}
 	#logo, #menu {
+		top: 10px;
 		position: absolute;
 		height: 65px;
 	}
 	#menu {
-		float: right;
-		position: relative;
+		right: 0px;
+		/* position: absolute; */
+	}
+	#menu a {
+		height: 64px;
+		right: 0px;
+		position: absolute;
 	}
 	#head {
 		height: 70px;
@@ -479,6 +488,29 @@ p.block {
 	}
 	.sidebar1 {
 		float: none;
+		padding: unset;
+		
+	}
+	#links {
+		top: 95px;
+		position: fixed;
+		right: 5px;
+		width: 125px;
+		background-color: #d3d3d3;
+		padding: 12px 5px 12px 5px;
+	}
+	#links a {
+		float: left;
+		width: 100%;
+		font-weight: normal;
+		position: relative;
+		margin: 5px;
+		padding: 5px;
+	}
+	#links a:hover {
+		font-weight: bold;
+		background-color: #c4c1c1;
+		text-decoration: none;
 	}
 }
 

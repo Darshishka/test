@@ -25,7 +25,16 @@ a:active {
 	text-decoration: none;
 }
 </style>
-
+<script type="text/javascript">
+  function toggle() {
+    var x = document.getElementById("linksDiv");
+    if (x.style.display === "block") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "block";
+    }
+  }
+</script>
 <meta name="Description" content="The Northwest Collage Society fosters the appreciation and interest in the recognized medium of collage." />
 <meta name="Keywords" content="Collage, Northwest Collage Society, Northwest art, National Collage Society" />
 </head>
@@ -46,6 +55,41 @@ a:active {
 	  </li>
 	</ul>    
     <!-- end .header --></div>
+    <div id="mobileHeader" style="height: 80px;">
+      <a href="index.htm">
+        <img id="logo" src="./images/logo.jpg">
+      </a>
+      <div id="headText">
+        <div id="title">Northwest Collage Society</div>
+        <div id="titleShort">NW Collage Society</div>
+        <div id="tag">Established to advance the stature of collage as a major art medium</div>
+      </div>
+      <div id="menu">
+        <a onclick="toggle()">
+          <img src="./images/icon.png">
+        </a>
+      </div>
+    </div>
+    <div id="linksDiv">
+      <a href="links.htm" title="Links">Links</a> 
+      <br>
+      <a href="contact.htm" title="Contact Us">Contact Us</a> 
+      <br>
+
+      <a href="newsltr.htm" title="Newsletters">Newsletters</a> 
+      <br>
+
+      <a href="Art.htm" title="Member's Art">Members Art</a> 
+      <br>
+
+      <a href="shows.htm" title="Shows">Shows</a> 
+      <br>
+
+      <a href="programs.htm" title="Programs">Programs</a> 
+      <br>
+
+      <a href="index.htm" title="Home">Who we are</a>
+    </div>
 <!-- InstanceBeginEditable name="content1" -->
   <div class="contentLinks">
 	<div class="col1">

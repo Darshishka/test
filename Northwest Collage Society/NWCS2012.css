@@ -345,7 +345,6 @@ p, .p {
 	background: #FC6;
 	padding: 10 20px;
 	margin-left: 50px;
-	
 }
 .col2 {
 	float: left;
@@ -353,6 +352,7 @@ p, .p {
 	background: #9cf;
 	margin-left: 5px;
 	padding: 10 20px;
+
 }
 .col3 {
 	float: left;
@@ -360,6 +360,7 @@ p, .p {
 	background: #98AB60;
 	margin-left: 5px;
 	padding: 10 20px;
+
 }
 
 /* ~~ This grouped selector gives the lists in the .content area space ~~ */
@@ -422,10 +423,13 @@ p.block {
 	visibility: hidden;
 	height: 0px;
 }
-#links {
+#linksDiv {
 	display: none;
 }
 @media screen and (max-width: 976px) {
+	.col1, .col2, .col3, .contentArt{
+		margin-top: 100px;
+	}
 	#mobileHeader {
 		background-color:steelblue;
 		width: 98.5%;
@@ -508,6 +512,7 @@ p.block {
 		position: relative;
 		margin: 5px;
 		padding: 5px;
+		color: #000;
 	}
 	#linksDiv a:hover {
 		font-weight: bold;

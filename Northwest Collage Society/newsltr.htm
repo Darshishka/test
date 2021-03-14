@@ -40,7 +40,16 @@ a:active {
 	color: #666;
 }
 </style>
-
+<script type="text/javascript">
+  function toggle() {
+    var x = document.getElementById("linksDiv");
+    if (x.style.display === "block") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "block";
+    }
+  }
+</script>
 <meta name="Description" content="The Northwest Collage Society fosters the appreciation and interest in the recognized medium of collage." />
 <meta name="Keywords" content="Collage, Northwest Collage Society, Northwest art, National Collage Society" />
 </head>
@@ -61,6 +70,41 @@ a:active {
 	  </li>
 	</ul>    
     <!-- end .header --></div>
+    <div id="mobileHeader" style="height: 80px;">
+      <a href="index.htm">
+        <img id="logo" src="./images/logo.jpg">
+      </a>
+      <div id="headText">
+        <div id="title">Northwest Collage Society</div>
+        <div id="titleShort">NW Collage Society</div>
+        <div id="tag">Established to advance the stature of collage as a major art medium</div>
+      </div>
+      <div id="menu">
+        <a onclick="toggle()">
+          <img src="./images/icon.png">
+        </a>
+      </div>
+    </div>
+    <div id="linksDiv">
+      <a href="links.htm" title="Links" class="nobor">Links</a> 
+      <br>
+      <a href="contact.htm" title="Contact Us" class="nobor">Contact Us</a> 
+      <br>
+
+      <a href="newsltr.htm" title="Newsletters" class="nobor">Newsletters</a> 
+      <br>
+
+      <a href="Art.htm" title="Member's Art" class="nobor">Members Art</a> 
+      <br>
+
+      <a href="shows.htm" title="Shows" class="nobor">Shows</a> 
+      <br>
+
+      <a href="programs.htm" title="Programs" class="nobor">Programs</a> 
+      <br>
+
+      <a href="index.htm" title="Home" class="nobor">Who we are</a>
+    </div>
   <!-- InstanceBeginEditable name="sidebar" -->
   <div class="sidebar1"><!-- end .sidebar1 --><a href="Newsletters/NWCS_Newsletter_NOV2020.pdf" title="NWCS Newsletter" target="_blank"><img src="Newsletters/newsltr_images/newsletter_NOV2020.png" alt="Newsletter" width="280" height="369" title="Newsletter" border="0"/></a></div>
   <!-- InstanceEndEditable --><!-- InstanceBeginEditable name="content1" -->
